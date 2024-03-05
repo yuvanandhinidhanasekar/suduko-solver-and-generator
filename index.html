@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sudoku Solver and Generator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="container">
+        <h1>Sudoku Solver and Generator</h1>
+        
+        <table id="sudokuBoard"></table>
+        <br>
+    </div>
+    <div class="button-container">
+        <button onclick="generateSudoku()">Generate Sudoku</button>
+        <button onclick="checkUserSolution()">Check Solution</button>
+    </div>
+    <div class="button-container">
+        <button onclick="toggleTimer()">Pause</button>
+        <button onclick="toggleTimer()">Resume </button>
+    </div>
+        <div class="button-container">
+            <button onclick="solveSudoku()">Solve Sudoku</button>
+        </div>
+
+        <div id="timer">Timer: 00:00</div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
